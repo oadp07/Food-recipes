@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.7) url("sam-moghadam-khamseh-yxZSAjyToP4-unsplash.jpg") center/cover;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+       color:white;
+       height: auto;
+       width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    margin: auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+input,
+button {
+    border: 1px solid;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 8px 10px;
+}
+
+input[type="text"] {
+    width: 300px;
+}
+
+.search-btn {
+    cursor: pointer;
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.random-btn {
+    cursor: pointer;
+    margin-left: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.meals {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 120px;
+    margin-top: 20px;
+}
+
+.meal {
+    cursor: pointer;
+    position: relative;
+    height: 180px;
+    width: 180px;
+    text-align: center;
+}
+
+.meal img {
+    width: 100%;
+    height: 100%;
+    border: 4px solid #fff;
+    border-radius: 2px;
+}
+
+.meal-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease-in;
+    opacity: 0;
+}
+
+.meal:hover .meal-info {
+    opacity: 1;
+}
+
+.single-meal {
+    margin: 30px;
+    width: 100%;
+    height: 50%;
+}
+
+.single-meal img {
+    width: 300px;
+    margin: 15px;
+    border-radius: 2px;
+}
+
+.single-meal-info {
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #e09850;
+    border-radius: 5px;
+}
+
+.single-meal p {
+    margin: 0;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+
+.single-meal ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.single-meal ul li {
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    background-color: #fff;
+    display: inline-block;
+    color: #2d2013;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 0 5px 5px 0;
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+    .meals {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .meals {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .meal {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    input[type='text'] {
+        width: 100%;
+    }
+    .meals {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .meal {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    margin: 100px;
+}
+
+.nav-list li a:hover {
+    color: black;
+    background-color: rgb(81, 94, 89);
+    border-radius: 20px;
+    padding: 3px 22px;
+    text-decoration: none;
+}
+
+.btn {
+    padding: 7px 34px;
+    border-radius: 23px;
+    color: white;
+    background-color: rgb(49, 54, 54);
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 3px;
+    cursor: pointer;
+    position: absolute;
+    top: -50px;
+    right: 10px;
+}
+
+.btn:hover,
+.btn-big:hover {
+    background-color: white;
+    color: rgb(137, 180, 180);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
